@@ -1,10 +1,16 @@
 import React from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 
-const AnimalDetalle = () => {
+const AnimalDetalle = ({ navigation, route }) => {
     return (
         <View>
             <Text>Detalle</Text>
+            <Text>{route.params.id}</Text>
+            <Text>{route.params.name}</Text>
+            <Text>{route.params.codigo}</Text>
+            <Text>{route.params.mother}</Text>
+            <Text>{route.params.father}</Text>
+            <Text>{route.params.category}</Text>
         </View>
     )
 }
